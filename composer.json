@@ -26,7 +26,9 @@
     "issues": "https://github.com/websharks/wps-skeleton-pro/issues"
   },
 
-  "require": {},
+  "require": {
+    "wp-sharks-rv": "dev-master"
+  },
   "require-dev": {
     "package/bourbon": "4.2.3",
     "websharks/wp-i18n-tools": "dev-master",
