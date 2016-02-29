@@ -1,0 +1,63 @@
+{
+  "name": "websharks/wps-skeleton-pro",
+  "homepage": "https://github.com/websharks/wps-skeleton-pro",
+  "description": "WP Sharks™ plugin skeleton.",
+  "keywords": ["websharks", "wp sharks", "skeleton"],
+
+  "type": "project",
+  "license": "GPL-3.0+",
+
+  "authors": [{
+    "name": "websharks",
+    "homepage": "http://websharks-inc.com/",
+    "role": "company"
+  }, {
+    "name": "jaswsinc",
+    "homepage": "http://jaswsinc.com/",
+    "role": "developer"
+  }, {
+    "name": "raamdev",
+    "homepage": "http://raam.org/",
+    "role": "developer"
+  }],
+
+  "support": {
+    "source": "https://github.com/websharks/wps-skeleton-pro",
+    "issues": "https://github.com/websharks/wps-skeleton-pro/issues"
+  },
+
+  "require": {},
+  "require-dev": {
+    "package/bourbon": "4.2.3",
+    "websharks/wp-i18n-tools": "dev-master",
+    "websharks/wp-sharks-core": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+
+  "autoload": {
+    "psr-4": {
+      "WebSharks\\WpSharks\\Skeleton\\Pro\\Classes\\": "src/includes/classes",
+      "WebSharks\\WpSharks\\Skeleton\\Pro\\Functions\\": "src/includes/functions",
+      "WebSharks\\WpSharks\\Skeleton\\Pro\\Interfaces\\": "src/includes/interfaces",
+      "WebSharks\\WpSharks\\Skeleton\\Pro\\Traits\\": "src/includes/traits"
+    }
+  },
+
+  "config": {
+    "vendor-dir": "src/vendor",
+    "preferred-install": "dist"
+  },
+
+  "repositories": [{
+    "type": "package",
+    "package": {
+      "name": "package/bourbon",
+      "version": "4.2.3",
+      "dist": {
+        "url": "https://github.com/thoughtbot/bourbon/releases/download/v4.2.3/bourbon-v4.2.3.zip",
+        "type": "zip"
+      }
+    }
+  }]
+}

@@ -1,0 +1,21 @@
+project_title                    = Skeleton Pro
+
+project_owner                    = websharks
+project_slug                     = wps-skeleton-pro
+
+project_namespace                = WebSharks\\WpSharks\\Skeleton\\Pro
+project_sub_namespace            = WpSharksSkeletonPro
+
+project_lite_title               = Skeleton
+project_lite_slug                = wps-skeleton
+
+project_lite_namespace           = WebSharks\\WpSharks\\Skeleton
+project_lite_sub_namespace       = WpSharksSkeleton
+
+project_version                  = %y%m%d
+
+project_php_required_version     = 7.0.1
+project_php_tested_up_to_version = ${php.version}
+
+project_wp_required_version      = 4.4
+project_wp_tested_up_to_version  = 4.5-alpha
