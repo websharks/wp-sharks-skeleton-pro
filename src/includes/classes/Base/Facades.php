@@ -1,6 +1,6 @@
 <?php
 // This file was auto-generated:
-// February 29th, 2016, 4:56 pm UTC
+// March 3rd, 2016, 3:48 am UTC
 
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Base;
