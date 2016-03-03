@@ -1,6 +1,6 @@
 === Skeleton Pro ===
 
-Stable tag: 16xxxx
+Stable tag: 160303
 Requires at least: 4.4
 Tested up to: 4.5-alpha
 Text Domain: wps-skeleton
