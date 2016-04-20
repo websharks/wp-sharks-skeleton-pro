@@ -1,6 +1,6 @@
 <?php
 declare (strict_types = 1);
-namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Base;
+namespace WebSharks\WpSharks\Skeleton\Pro;
 
 use WebSharks\WpSharks\Skeleton\Pro\Classes;
 use WebSharks\WpSharks\Skeleton\Pro\Interfaces;
@@ -19,11 +19,10 @@ use WebSharks\Core\WpSharksCore\Classes\Core\Base\Exception;
 use WebSharks\Core\WpSharksCore\Interfaces as CoreInterfaces;
 use WebSharks\Core\WpSharksCore\Traits as CoreTraits;
 
-/**
- * Pseudo-static facades.
- *
- * @since 16xxxx Initial release.
- */
-abstract class Facades
+class ActiveTest extends \PHPUnit_Framework_TestCase
 {
+    public function testActive()
+    {
+        $this->assertSame(true, c::app() instanceof Classes\App);
+    }
 }

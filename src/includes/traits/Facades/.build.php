@@ -12,9 +12,6 @@ if (PHP_SAPI !== 'cli') {
 }
 
 $Facades = '<?php
-// This file was auto-generated:
-// '.date('F jS, Y, g:i a T').'
-
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Base;
 

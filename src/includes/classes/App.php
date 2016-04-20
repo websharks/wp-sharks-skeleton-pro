@@ -33,7 +33,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '160303'; //v//
+    const VERSION = '160420'; //v//
 
     /**
      * Constructor.
@@ -52,12 +52,8 @@ class App extends SCoreClasses\App
                 ],
             ],
 
-            '§options' => [
-
-            ],
-            '§pro_option_keys' => [
-
-            ],
+            '§default_options' => [],
+            '§pro_option_keys' => [],
         ];
         parent::__construct($instance_base, $instance);
     }
@@ -67,7 +63,7 @@ class App extends SCoreClasses\App
      *
      * @since 16xxxx Initial release.
      */
-    protected function setupHooks()
+    protected function onPluginsLoadedSetupHooks()
     {
     }
 }
