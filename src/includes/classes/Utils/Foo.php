@@ -24,6 +24,6 @@ use WebSharks\Core\WpSharksCore\Traits as CoreTraits;
  *
  * @since 16xxxx Initial release.
  */
-class Foo extends SCoreFacades\SCore\Base\Core
+class Foo extends SCoreClasses\SCore\Base\Core
 {
 }
