@@ -59,11 +59,22 @@ class App extends SCoreClasses\App
     }
 
     /**
-     * Hook setup handler.
+     * Early hook setup handler.
      *
      * @since 16xxxx Initial release.
      */
-    protected function onPluginsLoadedSetupHooks()
+    protected function onSetupEarlyHooks()
     {
+        parent::onSetupEarlyHooks();
+    }
+
+    /**
+     * Other hook setup handler.
+     *
+     * @since 16xxxx Initial release.
+     */
+    protected function onSetupOtherHooks()
+    {
+        parent::onSetupOtherHooks();
     }
 }
