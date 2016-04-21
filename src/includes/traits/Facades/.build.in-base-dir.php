@@ -10,7 +10,6 @@ ini_set('display_errors', 'yes');
 if (PHP_SAPI !== 'cli') {
     exit('Requires CLI access.');
 }
-
 $Facades = '<?php
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Base;

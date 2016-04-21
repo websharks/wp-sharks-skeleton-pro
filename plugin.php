@@ -4,8 +4,8 @@
  *
  * @wp-plugin
  *
- * Version: 160420
- * Text Domain: wps-skeleton
+ * Version: 160421
+ * Text Domain: skeleton
  * Plugin Name: Skeleton Pro
  *
  * Author: WP Sharks™

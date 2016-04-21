@@ -1,6 +1,6 @@
 {
-  "name": "websharks/wps-skeleton-pro",
-  "homepage": "https://github.com/websharks/wps-skeleton-pro",
+  "name": "websharks/wp-sharks-skeleton-pro",
+  "homepage": "https://github.com/websharks/wp-sharks-skeleton-pro",
   "description": "WP Sharks™ plugin skeleton.",
   "keywords": ["websharks", "wp sharks", "skeleton"],
 
@@ -22,8 +22,8 @@
   }],
 
   "support": {
-    "source": "https://github.com/websharks/wps-skeleton-pro",
-    "issues": "https://github.com/websharks/wps-skeleton-pro/issues"
+    "source": "https://github.com/websharks/wp-sharks-skeleton-pro",
+    "issues": "https://github.com/websharks/wp-sharks-skeleton-pro/issues"
   },
 
   "require": {
