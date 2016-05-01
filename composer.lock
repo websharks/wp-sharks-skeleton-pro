@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "53ad7464e5c89a7cab1217e9713854c6",
+    "hash": "17b8f53384589c071acca1a85ba280e5",
     "content-hash": "947de507d8ad5043c478398462621286",
     "packages": [
         {
@@ -61,12 +61,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/wp-sharks-core-rv.git",
-                "reference": "f3c82dc8964ea1addf140a8bf2d5dbce82e375c2"
+                "reference": "f46b1e6575476928d24eb3325b7155712d40d89d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/websharks/wp-sharks-core-rv/zipball/f3c82dc8964ea1addf140a8bf2d5dbce82e375c2",
-                "reference": "f3c82dc8964ea1addf140a8bf2d5dbce82e375c2",
+                "url": "https://api.github.com/repos/websharks/wp-sharks-core-rv/zipball/f46b1e6575476928d24eb3325b7155712d40d89d",
+                "reference": "f46b1e6575476928d24eb3325b7155712d40d89d",
                 "shasum": ""
             },
             "require": {
@@ -99,9 +99,9 @@
             "keywords": [
                 "websharks",
                 "wordpress",
-                "wp sharks"
+                "wpsharks"
             ],
-            "time": "2016-04-21 05:25:31"
+            "time": "2016-05-01 06:50:51"
         }
     ],
     "packages-dev": [
@@ -677,16 +677,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "fb12163881a98588bcdc4ba820a96e0ff5ad97dc"
+                "reference": "b4fe3b7387cb323fd15ad5837cae992422c9fa5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/fb12163881a98588bcdc4ba820a96e0ff5ad97dc",
-                "reference": "fb12163881a98588bcdc4ba820a96e0ff5ad97dc",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/b4fe3b7387cb323fd15ad5837cae992422c9fa5c",
+                "reference": "b4fe3b7387cb323fd15ad5837cae992422c9fa5c",
                 "shasum": ""
             },
             "require": {
@@ -753,7 +753,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2016-04-24 00:08:55"
+            "time": "2016-04-24 00:30:41"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -870,12 +870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/core.git",
-                "reference": "62a653d2406ef64df79111ee7fca68b68843e792"
+                "reference": "adf3e208d1b70054e7a3610663ed2e113e20014a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/websharks/core/zipball/62a653d2406ef64df79111ee7fca68b68843e792",
-                "reference": "62a653d2406ef64df79111ee7fca68b68843e792",
+                "url": "https://api.github.com/repos/websharks/core/zipball/adf3e208d1b70054e7a3610663ed2e113e20014a",
+                "reference": "adf3e208d1b70054e7a3610663ed2e113e20014a",
                 "shasum": ""
             },
             "require": {
@@ -985,7 +985,7 @@
             "keywords": [
                 "websharks"
             ],
-            "time": "2016-04-24 10:05:21"
+            "time": "2016-04-30 17:31:44"
         },
         {
             "name": "websharks/dicer",
@@ -1095,21 +1095,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/wp-sharks-core.git",
-                "reference": "064fb07372b5968ed3e039b852ee82b69bbfbc44"
+                "reference": "8c262c59f12d634d7e74083c65c551aa57fbddaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/websharks/wp-sharks-core/zipball/064fb07372b5968ed3e039b852ee82b69bbfbc44",
-                "reference": "064fb07372b5968ed3e039b852ee82b69bbfbc44",
+                "url": "https://api.github.com/repos/websharks/wp-sharks-core/zipball/8c262c59f12d634d7e74083c65c551aa57fbddaa",
+                "reference": "8c262c59f12d634d7e74083c65c551aa57fbddaa",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.4",
                 "websharks/core": "dev-master",
                 "websharks/wp-php-rv": "dev-master"
-            },
-            "require-dev": {
-                "package/bourbon": "4.2.3"
             },
             "type": "library",
             "autoload": {
@@ -1148,7 +1145,7 @@
                 "wordpress",
                 "wp sharks"
             ],
-            "time": "2016-04-23 06:33:52"
+            "time": "2016-04-30 00:40:55"
         }
     ],
     "aliases": [],

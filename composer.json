@@ -2,7 +2,7 @@
   "name": "websharks/wp-sharks-skeleton-pro",
   "homepage": "https://github.com/websharks/wp-sharks-skeleton-pro",
   "description": "WP Sharks™ plugin skeleton.",
-  "keywords": ["websharks", "wp sharks", "skeleton"],
+  "keywords": ["websharks", "wpsharks", "skeleton"],
 
   "type": "project",
   "license": "GPL-3.0+",
