@@ -1,9 +1,9 @@
 === Skeleton Pro ===
 
-Stable tag: 160501
+Stable tag: 160504
 
-Tested up to: 4.5
-Requires at least: 4.5
+Tested up to: 4.5.1
+Requires at least: 4.5.1
 
 Text Domain: skeleton
 

@@ -33,7 +33,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '160501'; //v//
+    const VERSION = '160504'; //v//
 
     /**
      * Constructor.
@@ -145,7 +145,7 @@ class App extends SCoreClasses\App
                         'markup'       => sprintf(
                             __('<strong>%1$s</strong> v%2$s installed successfully.', 'wp-sharks-core'),
                             esc_html($this->Config->©brand['©name']),
-                            esc_html($this->c::version())
+                            esc_html(c::version())
                         ),
                     ];
                 },
