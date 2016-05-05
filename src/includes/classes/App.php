@@ -33,7 +33,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '160504'; //v//
+    const VERSION = '160505'; //v//
 
     /**
      * Constructor.
