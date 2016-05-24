@@ -18,6 +18,9 @@ use WebSharks\Core\WpSharksCore\Classes as CoreClasses;
 use WebSharks\Core\WpSharksCore\Classes\Core\Base\Exception;
 use WebSharks\Core\WpSharksCore\Interfaces as CoreInterfaces;
 use WebSharks\Core\WpSharksCore\Traits as CoreTraits;
+#
+use function assert as debug;
+use function get_defined_vars as vars;
 
 /**
  * App.
@@ -33,7 +36,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '160509'; //v//
+    const VERSION = '160524'; //v//
 
     /**
      * Constructor.
@@ -95,7 +98,7 @@ class App extends SCoreClasses\App
                             'test'        => function(string $slug) {},
 
                             A test function is optional.
-                            A successful test must return `true`.
+                            A successful test must return nothing.
                             A failed test must return an array with:
                                 - `reason`      = One of: `needs-upgrade|needs-downgrade`.
                                 - `min_version` = Min version, if `reason=needs-upgrade`.
@@ -113,7 +116,7 @@ class App extends SCoreClasses\App
                             'test'        => function(string $slug) {},
 
                             A test function is optional.
-                            A successful test must return `true`.
+                            A successful test must return nothing.
                             A failed test must return an array with:
                                 - `reason`      = One of: `needs-upgrade|needs-downgrade`.
                                 - `min_version` = Min version, if `reason=needs-upgrade`.
@@ -129,7 +132,7 @@ class App extends SCoreClasses\App
                             'test'        => function(string $key) {},
 
                             A test function is required.
-                            A successful test must return `true`.
+                            A successful test must return nothing.
                             A failed test must return an array with:
                                 - `how_to_resolve` = Brief rich-text description; i.e., → To resolve, [how_to_resolve].
                                 - `cap_to_resolve` = Cap required to satisfy; e.g., `manage_options`.
@@ -142,11 +145,7 @@ class App extends SCoreClasses\App
                 '§on_install' => function (array $installion_history) {
                     return [
                         'is_transient' => true,
-                        'markup'       => sprintf(
-                            __('<strong>%1$s</strong> v%2$s installed successfully.', 'wp-sharks-core'),
-                            esc_html($this->Config->©brand['©name']),
-                            esc_html(c::version())
-                        ),
+                        'markup'       => sprintf(__('<strong>%1$s</strong> v%2$s installed successfully.', 'wp-sharks-skeleton'), esc_html($this->Config->©brand['©name']), esc_html($this::VERSION)),
                     ];
                 },
             ],
