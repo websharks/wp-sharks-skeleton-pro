@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "13503d6f9006a3421b6b52f95dee5ae4",
-    "content-hash": "53081de592921a93117d8cb6712cc9c9",
+    "hash": "42a8789e0f81a44431ef28f844fb143a",
+    "content-hash": "cabcc6c5cd2be44c9fc51b5800ba4273",
     "packages": [
         {
             "name": "websharks/wp-php-rv",
-            "version": "dev-master",
+            "version": "160524",
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/wp-php-rv.git",
@@ -57,16 +57,16 @@
         },
         {
             "name": "websharks/wp-sharks-core-rv",
-            "version": "dev-master",
+            "version": "160524",
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/wp-sharks-core-rv.git",
-                "reference": "83e9f9ef5ba0b4242a8d3dd3804b53ebbebea897"
+                "reference": "a5ba2fbbe9ef4aee538b4da04d94966b4a927f22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/websharks/wp-sharks-core-rv/zipball/83e9f9ef5ba0b4242a8d3dd3804b53ebbebea897",
-                "reference": "83e9f9ef5ba0b4242a8d3dd3804b53ebbebea897",
+                "url": "https://api.github.com/repos/websharks/wp-sharks-core-rv/zipball/a5ba2fbbe9ef4aee538b4da04d94966b4a927f22",
+                "reference": "a5ba2fbbe9ef4aee538b4da04d94966b4a927f22",
                 "shasum": ""
             },
             "require": {
@@ -101,16 +101,13 @@
                 "wordpress",
                 "wpsharks"
             ],
-            "time": "2016-05-24 13:18:02"
+            "time": "2016-05-24 15:26:53"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "websharks/wp-php-rv": 20,
-        "websharks/wp-sharks-core-rv": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
