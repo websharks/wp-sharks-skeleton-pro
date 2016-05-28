@@ -12,9 +12,7 @@ project_lite_slug                = wp-sharks-skeleton
 project_lite_namespace           = WebSharks\\WpSharks\\Skeleton
 project_lite_sub_namespace       = WpSharksSkeleton
 
-project_version                  = %y%m%d
-
-project_required_os              =
+project_version                  = %y%m%d.%now
 
 project_php_required_version     = 7.0.4
 project_php_tested_up_to_version = ${php.version}
@@ -24,6 +22,5 @@ project_php_required_extensions  =
 project_wp_required_version      = 4.5.2
 project_wp_tested_up_to_version  = 4.5.2
 
-project_wp_sharks_core_required_version                 = 000000
-project_wp_sharks_core_tested_up_to_version             = 000000
-project_wp_sharks_core_max_compatible_version           =
+project_wp_sharks_core_required_version                 = 160528.1258
+project_wp_sharks_core_tested_up_to_version             = 160528.1258
