@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "42a8789e0f81a44431ef28f844fb143a",
-    "content-hash": "cabcc6c5cd2be44c9fc51b5800ba4273",
+    "hash": "13503d6f9006a3421b6b52f95dee5ae4",
+    "content-hash": "53081de592921a93117d8cb6712cc9c9",
     "packages": [
         {
             "name": "websharks/wp-php-rv",
-            "version": "160524",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/wp-php-rv.git",
@@ -57,7 +57,7 @@
         },
         {
             "name": "websharks/wp-sharks-core-rv",
-            "version": "160524",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/websharks/wp-sharks-core-rv.git",
@@ -107,7 +107,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "websharks/wp-php-rv": 20,
+        "websharks/wp-sharks-core-rv": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

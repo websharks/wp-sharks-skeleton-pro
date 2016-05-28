@@ -2,22 +2,15 @@
 # This file is distributed under the same license as the Skeleton Pro package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Skeleton Pro 160528.12337\n"
+"Project-Id-Version: Skeleton Pro 160528.61905\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-sharks-skeleton-pro\n"
-"POT-Creation-Date: 2016-05-28 03:42:38+00:00\n"
+"POT-Creation-Date: 2016-05-28 17:11:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-
-#: .~build/wp-sharks-skeleton/.~build/wp-sharks-skeleton/src/includes/classes/App.php:148
-#: .~build/wp-sharks-skeleton/src/includes/classes/App.php:148
-#: .~build/wp-sharks-skeleton-pro/src/includes/classes/App.php:148
-#: src/includes/classes/App.php:148
-msgid "<strong>%1$s</strong> v%2$s installed successfully."
-msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "Skeleton Pro"
