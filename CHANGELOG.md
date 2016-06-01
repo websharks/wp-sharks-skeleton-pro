@@ -1,3 +1,3 @@
-## v${[project_version]}
+## v160601.63311
 
 - Initial release.
