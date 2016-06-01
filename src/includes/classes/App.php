@@ -55,16 +55,28 @@ class App extends SCoreClasses\App
                 ],
             ],
 
-            '©brand' => [
-                '©text_domain' => '',
-                '©slug'        => '',
-                '©var'         => '',
-                '©name'        => '',
-                '©acronym'     => '',
-                '©prefix'      => '',
+            '§specs' => [
+                /*
+                    '§is_pro'          => false,
+                    '§in_wp'           => false,
+                    '§is_network_wide' => false,
+                    '§type'            => '',
+                    '§file'            => '',
+                */
+            ],
 
-                '§domain'      => '',
-                '§domain_path' => '',
+            '©brand' => [
+                /*
+                    '©text_domain' => '',
+                    '©slug'        => '',
+                    '©var'         => '',
+                    '©name'        => '',
+                    '©acronym'     => '',
+                    '©prefix'      => '',
+
+                    '§domain'      => '',
+                    '§domain_path' => '',
+                */
             ],
 
             '§pro_option_keys' => [],
@@ -139,23 +151,6 @@ class App extends SCoreClasses\App
                         ],
                     */
                 ],
-            ],
-
-            '§notices' => [
-                /*
-                    '§on_install' => function (array $installion_history) {
-                        return [
-                            'is_transient' => true,
-                            'markup'       => '<p>'.sprintf(__('<strong>%1$s</strong> v%2$s installed successfully.', 'wp-sharks-skeleton'), esc_html($this->Config->©brand['©name']), esc_html($this::VERSION)).'</p>',
-                        ];
-                    },
-                    '§on_reinstall' => function (array $installion_history) {
-                        return [
-                            'is_transient' => false,
-                            'markup'       => '<p>'.sprintf(__('<strong>%1$s</strong> detected a new version of itself. Recompiled successfully. You\'re now running v%2$s.', 'wp-sharks-skeleton'), esc_html($this->Config->©brand['©name']), esc_html($this::VERSION)).'</p>',
-                        ];
-                    },
-                */
             ],
         ];
         parent::__construct($instance_base, $instance);

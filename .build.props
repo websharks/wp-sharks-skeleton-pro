@@ -1,26 +1,26 @@
-project_title                    = WP Sharks Skeleton Pro
+project_title                               = WP Sharks Skeleton Pro
 
-project_owner                    = websharks
-project_slug                     = wp-sharks-skeleton-pro
+project_owner                               = websharks
+project_slug                                = wp-sharks-skeleton-pro
 
-project_namespace                = WebSharks\\WpSharks\\Skeleton\\Pro
-project_sub_namespace            = WpSharksSkeletonPro
+project_namespace                           = WebSharks\\WpSharks\\Skeleton\\Pro
+project_sub_namespace                       = WpSharksSkeletonPro
 
-project_lite_title               = WP Sharks Skeleton
-project_lite_slug                = wp-sharks-skeleton
+project_lite_title                          = WP Sharks Skeleton
+project_lite_slug                           = wp-sharks-skeleton
 
-project_lite_namespace           = WebSharks\\WpSharks\\Skeleton
-project_lite_sub_namespace       = WpSharksSkeleton
+project_lite_namespace                      = WebSharks\\WpSharks\\Skeleton
+project_lite_sub_namespace                  = WpSharksSkeleton
 
-project_version                  = %y%m%d.%now
+project_version                             = %y%m%d.%now
 
-project_php_required_version     = 7.0.4
-project_php_tested_up_to_version = ${php.version}
-project_php_required_bits        = 64
-project_php_required_extensions  =
+project_php_required_version                = 7.0.4
+project_php_tested_up_to_version            = ${php.version}
+project_php_required_bits                   = 64
+project_php_required_extensions             =
 
-project_wp_required_version      = 4.5.2
-project_wp_tested_up_to_version  = 4.5.2
+project_wp_required_version                 = 4.5.2
+project_wp_tested_up_to_version             = 4.5.2
 
-project_wp_sharks_core_required_version                 = 160528.1258
-project_wp_sharks_core_tested_up_to_version             = 160528.1258
+project_wp_sharks_core_required_version     = 160601.61851
+project_wp_sharks_core_tested_up_to_version = 160601.61851
