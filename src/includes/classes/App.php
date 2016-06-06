@@ -74,6 +74,7 @@ class App extends SCoreClasses\App
                     '©acronym'     => '',
                     '©prefix'      => '',
 
+                    '§action_base' => '',
                     '§domain'      => '',
                     '§domain_path' => '',
                 */
