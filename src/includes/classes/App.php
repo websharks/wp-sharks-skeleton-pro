@@ -25,18 +25,18 @@ use function get_defined_vars as vars;
 /**
  * App.
  *
- * @since 16xxxx Initial release.
+ * @since 160624.36295 Initial release.
  */
 class App extends SCoreClasses\App
 {
     /**
      * Version.
      *
-     * @since $v
+     * @since 160624.36295
      *
      * @type string Version.
      */
-    const VERSION = '160624.34776'; //v//
+    const VERSION = '160624.36295'; //v//
 
     /**
      * Constructor.
