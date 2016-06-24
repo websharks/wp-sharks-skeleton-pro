@@ -25,14 +25,14 @@ use function get_defined_vars as vars;
 /**
  * App.
  *
- * @since 160624.34776 Initial release.
+ * @since 16xxxx Initial release.
  */
 class App extends SCoreClasses\App
 {
     /**
      * Version.
      *
-     * @since 160624.34776
+     * @since $v
      *
      * @type string Version.
      */
