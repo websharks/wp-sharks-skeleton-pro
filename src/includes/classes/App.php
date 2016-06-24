@@ -60,6 +60,7 @@ class App extends SCoreClasses\App
                     '§is_pro'          => false,
                     '§in_wp'           => false,
                     '§is_network_wide' => false,
+
                     '§type'            => '',
                     '§file'            => '',
                 */
@@ -67,14 +68,13 @@ class App extends SCoreClasses\App
 
             '©brand' => [
                 /*
-                    '©text_domain' => '',
-                    '©slug'        => '',
-                    '©var'         => '',
                     '©name'        => '',
                     '©acronym'     => '',
-                    '©prefix'      => '',
 
-                    '§action_base' => '',
+                    '©slug'        => '',
+                    '©text_domain' => '',
+                    '©var'         => '',
+
                     '§domain'      => '',
                     '§domain_path' => '',
                 */

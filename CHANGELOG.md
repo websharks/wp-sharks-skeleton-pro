@@ -1,6 +1,6 @@
 ## $v
 
-- Updating to latest WPSC.
+- Updating to latest WPS Core.
 
 ## v160601.63311
 
