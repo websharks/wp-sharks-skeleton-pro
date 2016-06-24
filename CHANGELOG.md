@@ -1,4 +1,4 @@
-## $v
+## v160624.34776
 
 - Updating to latest WPS Core.
 
