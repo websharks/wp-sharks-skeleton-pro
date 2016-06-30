@@ -1,4 +1,4 @@
-project_title                               = Skeleton Pro
+project_title                               = WP Sharks Skeleton Pro
 
 project_owner                               = websharks
 project_slug                                = wp-sharks-skeleton-pro
@@ -7,7 +7,7 @@ project_text_domain                         = wp-sharks-skeleton
 project_namespace                           = WebSharks\\WpSharks\\Skeleton\\Pro
 project_sub_namespace                       = WpSharksSkeletonPro
 
-project_lite_title                          = Skeleton
+project_lite_title                          = WP Sharks Skeleton
 project_lite_slug                           = wp-sharks-skeleton
 project_lite_text_domain                    = wp-sharks-skeleton
 
