@@ -1,6 +1,6 @@
 === Skeleton Pro ===
 
-Stable tag: 160630.27940
+Stable tag: 160630.28561
 
 Tested up to: 4.5.3
 Requires at least: 4.5.3
