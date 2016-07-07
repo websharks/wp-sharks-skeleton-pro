@@ -23,7 +23,7 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * App.
+ * App class.
  *
  * @since 160624.36295 Initial release.
  */
@@ -36,7 +36,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '160630.69918'; //v//
+    const VERSION = '160707.2342'; //v//
 
     /**
      * Constructor.
@@ -71,12 +71,13 @@ class App extends SCoreClasses\App
                     '©name'        => '',
                     '©acronym'     => '',
 
-                    '©slug'        => '',
                     '©text_domain' => '',
+
+                    '©slug'        => '',
                     '©var'         => '',
 
-                    '§domain'      => '',
-                    '§domain_path' => '',
+                    '©short_slug'  => '',
+                    '©short_var'   => '',
                 */
             ],
 
