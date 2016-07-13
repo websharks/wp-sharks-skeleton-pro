@@ -49,10 +49,12 @@ class App extends SCoreClasses\App
     {
         $instance_base = [
             '©di' => [
-                '©default_rule' => [
-                    'new_instances' => [
+                /*
+                    '©default_rule' => [
+                        'new_instances' => [
+                        ],
                     ],
-                ],
+                */
             ],
 
             '§specs' => [
@@ -61,28 +63,35 @@ class App extends SCoreClasses\App
                     '§in_wp'           => false,
                     '§is_network_wide' => false,
 
-                    '§type'            => '',
-                    '§file'            => '',
+                    '§type'            => 'plugin',
+                    '§file'            => dirname(__FILE__, 4).'/plugin.php',
                 */
             ],
-
             '©brand' => [
                 /*
-                    '©name'        => '',
                     '©acronym'     => '',
-
-                    '©text_domain' => '',
+                    '©name'        => '',
 
                     '©slug'        => '',
                     '©var'         => '',
 
                     '©short_slug'  => '',
                     '©short_var'   => '',
+
+                    '©text_domain' => '',
                 */
             ],
 
-            '§pro_option_keys' => [],
-            '§default_options' => [],
+            '§pro_option_keys' => [
+                /*
+                    '[key]',
+                */
+            ],
+            '§default_options' => [
+                /*
+                    '[key]' => '[value]',
+                */
+            ],
 
             '§conflicts' => [
                 '§plugins' => [
