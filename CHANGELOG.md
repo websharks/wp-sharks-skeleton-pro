@@ -1,3 +1,7 @@
+## $v
+
+- Updating to latest WPS Core.
+
 ## v160713.40762
 
 - Updating to latest WPS Core.
