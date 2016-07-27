@@ -4,7 +4,7 @@
  *
  * @wp-plugin
  *
- * Version: 160727.10411
+ * Version: 160727.73975
  * Text Domain: skeleton
  * Plugin Name: Skeleton Pro
  *
