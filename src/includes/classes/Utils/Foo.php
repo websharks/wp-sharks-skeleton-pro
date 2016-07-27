@@ -1,6 +1,6 @@
 <?php
 /**
- * Foo.
+ * Foo (example).
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,10 +29,19 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Foo.
+ * Foo (example).
  *
- * @since 160624.34776 Initial release.
+ * @since 000000 Initial release.
  */
 class Foo extends SCoreClasses\SCore\Base\Core
 {
+    /**
+     * Foo invoke (example).
+     *
+     * @since 000000 Initial release.
+     */
+    public function __invoke()
+    {
+        return; // Just an example.
+    }
 }

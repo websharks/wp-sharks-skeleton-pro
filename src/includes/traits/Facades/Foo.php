@@ -1,12 +1,12 @@
 <?php
 /**
- * Facades.
+ * Foo (example).
  *
  * @author @wpsharks
  * @copyright WP Sharks™
  */
 declare (strict_types = 1);
-namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Base;
+namespace WebSharks\WpSharks\Skeleton\Pro\Traits\Facades;
 
 use WebSharks\WpSharks\Skeleton\Pro\Classes;
 use WebSharks\WpSharks\Skeleton\Pro\Interfaces;
@@ -29,11 +29,21 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Pseudo-static facades.
+ * Foo (example).
  *
- * @since 160624.34776 Initial release.
+ * @since 000000
  */
-abstract class Facades
+trait Foo
 {
-    use Traits\Facades\Foo;
+    /**
+     * @since 000000 Foo example.
+     *
+     * @param mixed ...$args Variadic args to underlying utility.
+     *
+     * @see Classes\Utils\Foo::__invoke()
+     */
+    public static function foo()
+    {
+        return $GLOBALS[static::class]->Utils->Foo->__invoke();
+    }
 }
