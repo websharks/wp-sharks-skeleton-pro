@@ -1,6 +1,6 @@
 <?php
 /**
- * App.
+ * Application.
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,7 +29,7 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * App class.
+ * Application.
  *
  * @since 160624.36295 Initial release.
  */
