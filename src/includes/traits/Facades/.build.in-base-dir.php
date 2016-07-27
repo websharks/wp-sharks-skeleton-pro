@@ -1,4 +1,10 @@
 <?php
+/**
+ * Facades.
+ *
+ * @author @wpsharks
+ * @copyright WP Sharks™
+ */
 // @codingStandardsIgnoreFile
 
 declare (strict_types = 1);
@@ -11,6 +17,12 @@ if (PHP_SAPI !== 'cli') {
     exit('Requires CLI access.');
 }
 $Facades = '<?php
+/**
+ * Facades.
+ *
+ * @author @wpsharks
+ * @copyright WP Sharks™
+ */
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Base;
 

@@ -1,4 +1,10 @@
 <?php
+/**
+ * App.
+ *
+ * @author @wpsharks
+ * @copyright WP Sharks™
+ */
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes;
 
@@ -34,9 +40,9 @@ class App extends SCoreClasses\App
      *
      * @since 160624.36295
      *
-     * @type string Version.
+     * @var string Version.
      */
-    const VERSION = '160715.31930'; //v//
+    const VERSION = '160727.6767'; //v//
 
     /**
      * Constructor.
