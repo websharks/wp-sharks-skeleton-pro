@@ -42,8 +42,8 @@ trait Foo
      *
      * @see Classes\Utils\Foo::__invoke()
      */
-    public static function foo()
+    public static function foo(...$args)
     {
-        return $GLOBALS[static::class]->Utils->Foo->__invoke();
+        return $GLOBALS[static::class]->Utils->Foo->__invoke(...$args);
     }
 }
