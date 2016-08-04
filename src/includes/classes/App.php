@@ -65,7 +65,6 @@ class App extends SCoreClasses\App
 
             '§specs' => [
                 /*
-                    '§is_pro'          => false,
                     '§in_wp'           => false,
                     '§is_network_wide' => false,
 
