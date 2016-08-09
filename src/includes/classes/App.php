@@ -190,5 +190,8 @@ class App extends SCoreClasses\App
     protected function onSetupOtherHooks()
     {
         parent::onSetupOtherHooks();
+
+        // Uncomment this line to enable a default menu page template.
+        // add_action('admin_menu', [$this->Utils->MenuPage, 'onAdminMenu']);
     }
 }

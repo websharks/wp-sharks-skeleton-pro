@@ -1,8 +1,8 @@
 <?php
 /**
- * Foo (example).
+ * Menu page utils.
  *
- * @author @wpsharks
+ * @author @jaswsinc
  * @copyright WP Sharks™
  */
 declare (strict_types = 1);
@@ -29,19 +29,31 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Foo (example).
+ * Menu page utils.
  *
  * @since 000000 Initial release.
  */
-class Foo extends SCoreClasses\SCore\Base\Core
+class MenuPage extends SCoreClasses\SCore\Base\Core
 {
     /**
-     * On `hook_name` hook.
+     * On `admin_menu` hook.
      *
      * @since 000000 Initial release.
      */
-    public function onHookName()
+    public function onAdminMenu()
     {
-        return; // Just an example.
+        s::addMenuPageItem([
+            'parent_page'   => 'options-general.php',
+            'menu_title'    => $this->App->Config->©brand['©name'],
+            'template_file' => 'admin/menu-pages/options/default.php',
+
+            'tabs' => [
+                'default' => sprintf(__('%1$s'), esc_html($this->App->Config->©brand['©name'])),
+                'restore' => [
+                    'label' => __('Restore Default Options'),
+                    'url'   => s::restoreDefaultOptionsUrl(), 'onclick' => 'confirm',
+                ],
+            ],
+        ]);
     }
 }
