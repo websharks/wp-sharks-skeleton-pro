@@ -19,6 +19,7 @@ project_version                             = %y%m%d.%now
 project_php_required_version                = 7.0.4
 project_php_tested_up_to_version            = ${php.version}
 project_php_required_bits                   = 64
+project_php_required_functions              =
 project_php_required_extensions             =
 
 project_wp_required_version                 = 0.0.0
