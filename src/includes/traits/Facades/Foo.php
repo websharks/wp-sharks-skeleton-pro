@@ -1,6 +1,6 @@
 <?php
 /**
- * Foo (example).
+ * Foo utils.
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,21 +29,21 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Foo (example).
+ * Foo utils.
  *
- * @since 000000
+ * @since $%v Initial release.
  */
 trait Foo
 {
     /**
-     * @since 000000 Foo example.
+     * @since $%v Initial release.
      *
      * @param mixed ...$args Variadic args to underlying utility.
      *
-     * @see Classes\Utils\Foo::__invoke()
+     * @see Classes\Utils\Foo::bar()
      */
     public static function foo(...$args)
     {
-        return $GLOBALS[static::class]->Utils->Foo->__invoke(...$args);
+        return $GLOBALS[static::class]->Utils->Foo->bar(...$args);
     }
 }

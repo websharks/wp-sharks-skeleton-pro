@@ -19,12 +19,12 @@ if (PHP_SAPI !== 'cli') {
     exit('Expecting a copy of the skeleton; not the skeleton itself.');
 }
 /*
- * Change directory.
+ * Change dir.
  */
 chdir(__DIR__);
 
 /*
- * Prepare repo.
+ * Clean.
  */
 `rm -rf .git`;
 `rm -rf phings`;
@@ -32,15 +32,16 @@ chdir(__DIR__);
 
 `rm -rf src/vendor`;
 `rm -f composer.lock`;
+
+`rm -f CHANGELOG.md`;
+
 `rm -rf src/includes/translations`;
 
-`rm -f prepare`; // Self.
-
-`git init`; // Initialize new Git repo.
-`git submodule add https://github.com/websharks/phings.git phings`;
+`rm -f prepare`; // Self deletion.
 
 /*
  * Prepare project files.
+ * Working w/ a clean directory.
  */
 $dev_username = trim(`git config user.name`);
 $dev_username = $dev_username ?: 'wpsharks';
@@ -61,6 +62,7 @@ foreach (dir_recursive_regex(__DIR__, '/\.(?:php|bash|js|json|css|xml|html|txt|m
     }
     $_contents = file_get_contents($_Resource->getPathname());
 
+    $_contents = str_replace('* @since $%v', '* @since $v', $_contents);
     $_contents = str_replace('* @author @wpsharks', '* @author @'.$dev_username, $_contents);
 
     $_contents = str_replace('WpSharks\\Skeleton', 'WpSharks\\'.$project_sub_namespace_name, $_contents);
@@ -78,6 +80,8 @@ foreach (dir_recursive_regex(__DIR__, '/\.(?:php|bash|js|json|css|xml|html|txt|m
     file_put_contents($_Resource->getPathname(), $_contents);
 } // unset($_Resource, $_contents); // Housekeeping.
 
+file_put_contents(__DIR__.'/CHANGELOG.md', '## $v'."\n\n".'- Initial release.'."\n");
+
 function dir_recursive_regex(string $dir, string $regex): \RegexIterator
 {
     $DirIterator          = new \RecursiveDirectoryIterator($dir, \FilesystemIterator::KEY_AS_PATHNAME | \FilesystemIterator::CURRENT_AS_SELF | \FilesystemIterator::SKIP_DOTS | \FilesystemIterator::UNIX_PATHS);
@@ -85,7 +89,13 @@ function dir_recursive_regex(string $dir, string $regex): \RegexIterator
     return $RegexIterator = new \RegexIterator($IteratorIterator, $regex, \RegexIterator::MATCH, \RegexIterator::USE_KEY);
 }
 /*
- * Confirmation / instructions.
+ * Initialize repo.
+ */
+`git init`; // Initialize new Git repo.
+`git submodule add https://github.com/websharks/phings.git phings`;
+
+/*
+ * Confirmation & instructions.
  */
 echo 'Project preparations complete.'."\n";
 echo 'To begin work, open: src/includes/classes/App.php'."\n";

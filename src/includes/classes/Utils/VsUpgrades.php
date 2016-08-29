@@ -1,6 +1,6 @@
 <?php
 /**
- * Menu page utils.
+ * VS upgrades.
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,31 +29,19 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Menu page utils.
+ * VS upgrades.
  *
- * @since $%v Initial release.
+ * @since $%v VS upgrades.
  */
-class MenuPage extends SCoreClasses\SCore\Base\Core
+class VsUpgrades extends SCoreClasses\SCore\Base\Core
 {
     /**
-     * On `admin_menu` hook.
+     * VS upgrade handler.
      *
-     * @since $%v Initial release.
+     * @since $%v VS upgrade handler.
      */
-    public function onAdminMenu()
+    public function fromLt000000()
     {
-        s::addMenuPageItem([
-            'parent_page'   => 'options-general.php',
-            'menu_title'    => $this->App->Config->©brand['©name'],
-            'template_file' => 'admin/menu-pages/options/default.php',
-
-            'tabs' => [
-                'default' => sprintf(__('%1$s', 'wp-sharks-skeleton'), esc_html($this->App->Config->©brand['©name'])),
-                'restore' => [
-                    'label' => __('Restore Default Options', 'wp-sharks-skeleton'),
-                    'url'   => s::restoreDefaultOptionsUrl(), 'onclick' => 'confirm',
-                ],
-            ],
-        ]);
+        // Do something here.
     }
 }

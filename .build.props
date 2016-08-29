@@ -2,6 +2,7 @@ project_title                               = Skeleton Pro
 
 project_owner                               = websharks
 project_slug                                = wp-sharks-skeleton-pro
+
 project_text_domain                         = wp-sharks-skeleton
 project_slack_channel                       = wp-sharks-skeleton
 

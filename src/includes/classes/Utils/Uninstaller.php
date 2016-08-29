@@ -1,6 +1,6 @@
 <?php
 /**
- * Menu page utils.
+ * Uninstall utils.
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,31 +29,23 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Menu page utils.
+ * Uninstall utils.
  *
  * @since $%v Initial release.
  */
-class MenuPage extends SCoreClasses\SCore\Base\Core
+class Uninstaller extends SCoreClasses\SCore\Base\Core
 {
     /**
-     * On `admin_menu` hook.
+     * Other uninstall routines.
      *
      * @since $%v Initial release.
+     *
+     * @param int $site_counter Site counter.
      */
-    public function onAdminMenu()
+    public function onOtherUninstallRoutines(int $site_counter)
     {
-        s::addMenuPageItem([
-            'parent_page'   => 'options-general.php',
-            'menu_title'    => $this->App->Config->©brand['©name'],
-            'template_file' => 'admin/menu-pages/options/default.php',
-
-            'tabs' => [
-                'default' => sprintf(__('%1$s', 'wp-sharks-skeleton'), esc_html($this->App->Config->©brand['©name'])),
-                'restore' => [
-                    'label' => __('Restore Default Options', 'wp-sharks-skeleton'),
-                    'url'   => s::restoreDefaultOptionsUrl(), 'onclick' => 'confirm',
-                ],
-            ],
-        ]);
+        // Do something here.
+        // $this->uninstallSomething($site_counter);
+        // i.e., Create protected methods in this class.
     }
 }

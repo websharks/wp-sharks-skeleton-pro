@@ -31,23 +31,23 @@ use function get_defined_vars as vars;
 /**
  * Application.
  *
- * @since 000000 Initial release.
+ * @since $%v Initial release.
  */
 class App extends SCoreClasses\App
 {
     /**
      * Version.
      *
-     * @since 000000
+     * @since $%v
      *
      * @var string Version.
      */
-    const VERSION = '160727.73975'; //v//
+    const VERSION = '160829.7828'; //v//
 
     /**
      * Constructor.
      *
-     * @since 000000 Initial release.
+     * @since $%v Initial release.
      *
      * @param array $instance Instance args.
      */
@@ -175,17 +175,22 @@ class App extends SCoreClasses\App
     /**
      * Early hook setup handler.
      *
-     * @since 000000 Initial release.
+     * @since $%v Initial release.
      */
     protected function onSetupEarlyHooks()
     {
         parent::onSetupEarlyHooks();
+
+        // Uncomment to enable extra install/uninstall handlers.
+        // s::addAction('vs_upgrades', [$this->Utils->Installer, 'onVsUpgrades']);
+        // s::addAction('other_install_routines', [$this->Utils->Installer, 'onOtherInstallRoutines']);
+        // s::addAction('other_uninstall_routines', [$this->Utils->Uninstaller, 'onOtherUninstallRoutines']);
     }
 
     /**
      * Other hook setup handler.
      *
-     * @since 000000 Initial release.
+     * @since $%v Initial release.
      */
     protected function onSetupOtherHooks()
     {

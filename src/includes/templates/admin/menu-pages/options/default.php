@@ -2,7 +2,7 @@
 /**
  * Template.
  *
- * @author @jaswsinc
+ * @author @wpsharks
  * @copyright WP Sharks™
  */
 declare (strict_types = 1);
@@ -33,13 +33,15 @@ $Form = $this->s::menuPageForm('§save-options');
 <?= $Form->openTag(); ?>
 
     <?= $Form->openTable(
-        __('General Options'),
-        sprintf(__('You can browse <em>our</em> <a href="%1$s" target="_blank">knowledge base</a> to learn more about these options.'), esc_url(s::brandUrl('/kb')))
+        __('General Options', 'wp-sharks-skeleton'),
+        sprintf(__('You can browse our <a href="%1$s" target="_blank">knowledge base</a> to learn more about these options.', 'wp-sharks-skeleton'), esc_url(s::brandUrl('/kb')))
     ); ?>
 
         <?= $Form->inputRow([
-            'label' => __('Option label.'),
-            'tip'   => __('Here is a tip.'),
+            'type'  => 'text',
+            'label' => __('Option label.', 'wp-sharks-skeleton'),
+            'tip'   => __('Here is a tip.', 'wp-sharks-skeleton'),
+            'note'  => sprintf(__('To learn more, see: <a href="%1$s" target="_blank">example KB article</a>.', 'wp-sharks-skeleton'), esc_url(s::brandUrl('/kb-article/example'))),
 
             'name'  => 'option_name',
             'value' => s::getOption('option_name'),

@@ -1,6 +1,6 @@
 <?php
 /**
- * Foo (example).
+ * Foo utils.
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,19 +29,42 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Foo (example).
+ * Foo utils.
  *
- * @since 000000 Initial release.
+ * @since $%v Initial release.
  */
 class Foo extends SCoreClasses\SCore\Base\Core
 {
     /**
+     * Example utility.
+     *
+     * @since $%v Initial release.
+     *
+     * @param array $args Input args.
+     *
+     * @return string Return value.
+     */
+    public function bar(array $args = []): string
+    {
+        $default_args = [
+            'one'   => 1,
+            'two'   => 2,
+            'three' => 3,
+        ];
+        $args += $default_args;
+
+        // Do something here.
+
+        return ''; // Returns a string.
+    }
+
+    /**
      * On `hook_name` hook.
      *
-     * @since 000000 Initial release.
+     * @since $%v Initial release.
      */
     public function onHookName()
     {
-        return; // Just an example.
+        // Do something here.
     }
 }

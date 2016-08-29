@@ -47,9 +47,9 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Pseudo-static facades.
+ * Facades.
  *
- * @since 160624.34776 Initial release.
+ * @since $%v
  */
 abstract class Facades
 {

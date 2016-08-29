@@ -1,6 +1,6 @@
 <?php
 /**
- * Menu page utils.
+ * Install utils.
  *
  * @author @wpsharks
  * @copyright WP Sharks™
@@ -29,31 +29,39 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * Menu page utils.
+ * Install utils.
  *
  * @since $%v Initial release.
  */
-class MenuPage extends SCoreClasses\SCore\Base\Core
+class Installer extends SCoreClasses\SCore\Base\Core
 {
     /**
-     * On `admin_menu` hook.
+     * Other install routines.
      *
      * @since $%v Initial release.
+     *
+     * @param array $history Install history.
      */
-    public function onAdminMenu()
+    public function onOtherInstallRoutines(array $history)
     {
-        s::addMenuPageItem([
-            'parent_page'   => 'options-general.php',
-            'menu_title'    => $this->App->Config->©brand['©name'],
-            'template_file' => 'admin/menu-pages/options/default.php',
+        // Do something here.
+        // $this->installSomething();
+        // i.e., Create protected methods in this class.
+    }
 
-            'tabs' => [
-                'default' => sprintf(__('%1$s', 'wp-sharks-skeleton'), esc_html($this->App->Config->©brand['©name'])),
-                'restore' => [
-                    'label' => __('Restore Default Options', 'wp-sharks-skeleton'),
-                    'url'   => s::restoreDefaultOptionsUrl(), 'onclick' => 'confirm',
-                ],
-            ],
-        ]);
+    /**
+     * Version-specific upgrades.
+     *
+     * @since $%v Initial release.
+     *
+     * @param array $history Install history.
+     */
+    public function onVsUpgrades(array $history)
+    {
+        // Do something here.
+        // VS upgrades run 'before' any other installer.
+        // if (version_compare($history['last_version'], '000000', '<')) {
+        //     $this->App->Utils->VsUpgrades->fromLt000000();
+        // }
     }
 }
