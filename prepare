@@ -52,9 +52,11 @@ if (!preg_match('/^[A-Z]/u', $project_title)) {
 } // ↑ Only if the developer didn't provide a proper title.
 $project_title = preg_replace('/\s+(?:Lite|Pro)$/ui', '', $project_title);
 
-$project_sub_namespace_name = preg_replace('/[^a-z0-9]+/ui', '', $project_title);
-$project_slug               = mb_strtolower(preg_replace('/[^a-z0-9]+/ui', '-', $project_title));
-$project_var                = mb_strtolower(preg_replace('/[^a-z0-9]+/ui', '_', $project_title));
+$project_sub_namespace_name = preg_replace('/\bWP\b/ui', 'Wp', $project_title);
+$project_sub_namespace_name = preg_replace('/[^a-z0-9]+/ui', '', $project_sub_namespace_name);
+
+$project_slug = mb_strtolower(preg_replace('/[^a-z0-9]+/ui', '-', $project_title));
+$project_var  = mb_strtolower(preg_replace('/[^a-z0-9]+/ui', '_', $project_title));
 
 foreach (dir_recursive_regex(__DIR__, '/\.(?:php|bash|js|json|css|xml|html|txt|md|props|cfg)$/ui') as $_Resource) {
     if (!$_Resource->isFile()) {
