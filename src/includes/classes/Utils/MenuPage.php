@@ -47,12 +47,9 @@ class MenuPage extends SCoreClasses\SCore\Base\Core
             'menu_title'    => $this->App->Config->©brand['©name'],
             'template_file' => 'admin/menu-pages/options/default.php',
 
-            'tabs' => [
+            'meta_links' => ['restore' => true],
+            'tabs'       => [
                 'default' => sprintf(__('%1$s', 'wp-sharks-skeleton'), esc_html($this->App->Config->©brand['©name'])),
-                'restore' => [
-                    'label' => __('Restore Default Options', 'wp-sharks-skeleton'),
-                    'url'   => s::restoreDefaultOptionsUrl(), 'onclick' => 'confirm',
-                ],
             ],
         ]);
     }
