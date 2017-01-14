@@ -1,3 +1,7 @@
+## $v
+
+- Enhancing security by removing `basename(__FILE__)` from direct access notices.
+
 ## v160829.8388
 
 - Adding extra install/uninstall starter files.
