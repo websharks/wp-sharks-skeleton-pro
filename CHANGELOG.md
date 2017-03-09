@@ -1,5 +1,6 @@
-## $v
+## v170309.34722
 
+- Enhancing defaults to make it easier to begin a new project.
 - Enhancing security by removing `basename(__FILE__)` from direct access notices.
 
 ## v160829.8388

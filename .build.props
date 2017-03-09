@@ -9,13 +9,6 @@ project_slack_channel                       = wp-sharks-skeleton
 project_namespace                           = WebSharks\\WpSharks\\Skeleton\\Pro
 project_sub_namespace                       = WpSharksSkeletonPro
 
-project_lite_title                          = Skeleton
-project_lite_slug                           = wp-sharks-skeleton
-project_lite_text_domain                    = wp-sharks-skeleton
-
-project_lite_namespace                      = WebSharks\\WpSharks\\Skeleton
-project_lite_sub_namespace                  = WpSharksSkeleton
-
 project_version                             = %y%m%d.%now
 
 project_php_required_version                = 7.0.4

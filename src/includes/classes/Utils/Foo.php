@@ -5,7 +5,7 @@
  * @author @wpsharks
  * @copyright WP Sharks™
  */
-declare (strict_types = 1);
+declare(strict_types=1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes\Utils;
 
 use WebSharks\WpSharks\Skeleton\Pro\Classes;
@@ -46,15 +46,7 @@ class Foo extends SCoreClasses\SCore\Base\Core
      */
     public function bar(array $args = []): string
     {
-        $default_args = [
-            'one'   => 1,
-            'two'   => 2,
-            'three' => 3,
-        ];
-        $args += $default_args;
-
         // Do something here.
-
         return ''; // Returns a string.
     }
 

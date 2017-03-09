@@ -5,7 +5,7 @@
  * @author @wpsharks
  * @copyright WP Sharks™
  */
-declare (strict_types = 1);
+declare(strict_types=1);
 namespace WebSharks\WpSharks\Skeleton\Pro;
 
 use WebSharks\WpSharks\Skeleton\Pro\Classes;

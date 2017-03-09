@@ -5,7 +5,7 @@
  * @author @wpsharks
  * @copyright WP Sharks™
  */
-declare (strict_types = 1);
+declare(strict_types=1);
 namespace WebSharks\WpSharks\Skeleton\Pro\Classes;
 
 use WebSharks\WpSharks\Skeleton\Pro\Classes;
@@ -40,9 +40,9 @@ class App extends SCoreClasses\App
      *
      * @since $%v
      *
-     * @var string Version.
+     * @type string Version.
      */
-    const VERSION = '160829.8388'; //v//
+    const VERSION = '170309.34722'; //v//
 
     /**
      * Constructor.
@@ -55,22 +55,17 @@ class App extends SCoreClasses\App
     {
         $instance_base = [
             '©di' => [
-                /*
-                    '©default_rule' => [
-                        'new_instances' => [
-                        ],
-                    ],
-                */
+                '©default_rule' => [
+                    'new_instances' => [],
+                ],
             ],
 
             '§specs' => [
-                /*
-                    '§in_wp'           => false,
-                    '§is_network_wide' => false,
+                '§in_wp'           => false,
+                '§is_network_wide' => false,
 
-                    '§type'            => 'plugin',
-                    '§file'            => dirname(__FILE__, 4).'/plugin.php',
-                */
+                '§type'            => 'plugin',
+                '§file'            => dirname(__FILE__, 4).'/plugin.php',
             ],
             '©brand' => [
                 /*
@@ -87,16 +82,8 @@ class App extends SCoreClasses\App
                 */
             ],
 
-            '§pro_option_keys' => [
-                /*
-                    '[key]',
-                */
-            ],
-            '§default_options' => [
-                /*
-                    '[key]' => '[value]',
-                */
-            ],
+            '§pro_option_keys' => [],
+            '§default_options' => [],
 
             '§conflicts' => [
                 '§plugins' => [
@@ -181,10 +168,9 @@ class App extends SCoreClasses\App
     {
         parent::onSetupEarlyHooks();
 
-        // Uncomment to enable extra install/uninstall handlers.
-        // s::addAction('vs_upgrades', [$this->Utils->Installer, 'onVsUpgrades']);
-        // s::addAction('other_install_routines', [$this->Utils->Installer, 'onOtherInstallRoutines']);
-        // s::addAction('other_uninstall_routines', [$this->Utils->Uninstaller, 'onOtherUninstallRoutines']);
+        s::addAction('vs_upgrades', [$this->Utils->Installer, 'onVsUpgrades']);
+        s::addAction('other_install_routines', [$this->Utils->Installer, 'onOtherInstallRoutines']);
+        s::addAction('other_uninstall_routines', [$this->Utils->Uninstaller, 'onOtherUninstallRoutines']);
     }
 
     /**
