@@ -21,9 +21,11 @@ use WebSharks\WpSharks\Core\Interfaces as SCoreInterfaces;
 use WebSharks\WpSharks\Core\Traits as SCoreTraits;
 #
 use WebSharks\Core\WpSharksCore\Classes as CoreClasses;
-use WebSharks\Core\WpSharksCore\Classes\Core\Base\Exception;
 use WebSharks\Core\WpSharksCore\Interfaces as CoreInterfaces;
 use WebSharks\Core\WpSharksCore\Traits as CoreTraits;
+#
+use WebSharks\Core\WpSharksCore\Classes\Core\Error;
+use WebSharks\Core\WpSharksCore\Classes\Core\Base\Exception;
 #
 use function assert as debug;
 use function get_defined_vars as vars;
@@ -42,7 +44,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '170309.34722'; //v//
+    const VERSION = '170912.50827'; //v//
 
     /**
      * Constructor.
@@ -53,6 +55,8 @@ class App extends SCoreClasses\App
      */
     public function __construct(array $instance = [])
     {
+        $Core = $GLOBALS[SCoreClasses\App::class];
+
         $instance_base = [
             '©di' => [
                 '©default_rule' => [
